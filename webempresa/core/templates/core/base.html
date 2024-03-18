@@ -40,24 +40,24 @@
       <h1 class="logo"><a href="{% url 'home' %}">Fastrackerp</a></h1>
 
       <nav id="navbar" class="navbar">
+
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'services' %}">Servicios</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a></li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="#about2">Blog</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
           <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
         </ul>
+<!--        
+        <ul>
+          <li><a class="nav-link scrollto active" href="{% url 'home' %}"</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'about' %}">Nosotros</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'services' %}">Servicios</a></li>
+        </ul>      
+        -->  
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
@@ -85,12 +85,9 @@
 
   </section><!-- End Hero -->
 
-
   {% block content %} {% endblock %}
 
-
   <main id="main">
-
     <!-- ======= Featured Services Section ======= -->
     <section id="featured-services" class="featured-services">
       <div class="container">
@@ -114,7 +111,7 @@
             <div class="icon-box">
               <div class="icon"><i class="bi bi-clipboard-data"></i></div>
               <h4 class="title"><a href="">Control de Gestión</a></h4>
-              <p class="description">Cuentas por cobrar y pagar, mantenga sus operaciones y deje que fastrackerp controle su cobranza y proceso de pagos</p>
+              <p class="description">Deje que fastrackerp controle su cobranza y proceso de pagos</p>
             </div>
           </div>
         </div>
@@ -131,7 +128,7 @@
             <img src="{% static 'web/img/about.png' %}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content">
-            <h3>Un equipo multidiciplinario de profesionales a tu servicio</h3>
+            <h3>Somos un equipo multidiciplinario de profesionales a tu servicio</h3>
             <p class="fst-italic">
               Porque somos emprendedores, conocemos las necesidades y como abordar los problemas  que se presentan en cada negocio.
               tenemos una solución para cada modelo de negocio.
@@ -159,22 +156,22 @@
 
           <div class="col-lg-3 col-6 text-center">
             <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Clients</p>
+            <p>Clientes</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
             <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Projects</p>
+            <p>Proyectos</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
             <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Hours Of Support</p>
+            <p>Horas de Soporte</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
             <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Hard Workers</p>
+            <p>Asesorías</p>
           </div>
 
         </div>
@@ -188,56 +185,56 @@
 
         <div class="section-title">
           <span>Services</span>
-          <h2>Services</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+          <h2>Servicios</h2>
+          <p>Asesoría empresarial, que permite que te enfoques en tu negocio</p>
         </div>
 
         <div class="row">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <h4><a href="">Software Contable</a></h4>
+              <p>Control multiempresa de toda tu gestión financiera y obligaciones tributarias</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Sed ut perspiciatis</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <h4><a href="">Capacitaciones</a></h4>
+              <p>Generamos instancias de aprendisaje basadas en tus objetivos</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <h4><a href="">Asesoría empresarial</a></h4>
+              <p>Ayudamos a que tus proyectos maduren de forma eficiente y prolongada</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-world"></i></div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <h4><a href="">Remuneraciones</a></h4>
+              <p>Outsourcing para el cálculo de tus sueldos y declaraciones</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-slideshow"></i></div>
-              <h4><a href="">Dele cardo</a></h4>
-              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+              <h4><a href="">Proyectos</a></h4>
+              <p>Desarrollo de proyectos vanguardistas</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-arch"></i></div>
-              <h4><a href="">Divera don</a></h4>
-              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+              <h4><a href=""></a>Innovación y tecnología</h4>
+              <p>Preocupados por los avances tecnologicos y uso eficiente de los procesos</p>
             </div>
           </div>
 
@@ -601,6 +598,7 @@
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
+
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
